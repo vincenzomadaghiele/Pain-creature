@@ -7,8 +7,8 @@
 #X floatatom 289 242 5 0 0 0 - - - 0;
 #X obj 230 189 delwrite~ bones 5000;
 #X floatatom 450 219 5 0 0 0 - - - 0;
-#X obj 511 283 hsl 128 15 0 1 0 0 empty empty feedback\ amt -2 -8 0
-10 #c6feff #000000 #000000 0 1;
+#X obj 511 283 hsl 128 15 0 1 0 0 empty empty feedback\\\ amt -2 -8
+0 10 #c6feff #000000 #000000 0 1;
 #X obj 450 303 s~ feedback;
 #X obj 235 157 r~ feedback;
 #X obj 450 279 *~ 0.6;
