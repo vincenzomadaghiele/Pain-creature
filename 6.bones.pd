@@ -5,12 +5,12 @@
 #X obj 283 323 hsl 128 15 0 1 0 0 empty empty vol -2 -8 0 10 #dfdfdf
 #000000 #000000 0 1;
 #X floatatom 289 242 5 0 0 0 - - - 0;
-#X obj 230 189 delwrite~ bones 5000;
+#X obj 452 193 delwrite~ bones 5000;
 #X floatatom 450 219 5 0 0 0 - - - 0;
 #X obj 511 283 hsl 128 15 0 1 0 0 empty empty feedback\\\ amt -2 -8
 0 10 #c6feff #000000 #000000 0 1;
 #X obj 450 303 s~ feedback;
-#X obj 235 157 r~ feedback;
+#X obj 457 161 r~ feedback;
 #X obj 450 279 *~ 0.6;
 #X obj 208 276 rev2~ 100 80 3000 20;
 #X obj 450 247 delread~ bones 300;

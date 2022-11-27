@@ -59,6 +59,8 @@
 #X obj 639 165 hsl 128 15 10 100 0 0 empty empty mod\\\ index -2 -8
 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 573 386 *~ 0.2;
+#X obj 737 371 adc~;
+#X obj 737 395 piezo-interaction-bela;
 #X connect 0 0 18 0;
 #X connect 1 0 2 0;
 #X connect 1 0 2 1;
@@ -117,3 +119,5 @@
 #X connect 51 0 28 0;
 #X connect 52 0 35 0;
 #X connect 53 0 9 0;
+#X connect 54 0 55 0;
+#X connect 55 1 1 1;
