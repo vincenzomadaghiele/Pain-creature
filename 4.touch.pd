@@ -97,7 +97,7 @@
 #X obj 223 425 tabosc4~ wavetable2;
 #X obj 363 425 tabosc4~ wavetable3;
 #X obj 503 425 tabosc4~ wavetable4;
-#X msg 1006 331 \; wavetable1 sinesum 131 0.6 \; wavetable2 sinesum
+#X msg 1010 354 \; wavetable1 sinesum 131 0.6 \; wavetable2 sinesum
 131 0.5 0 0.25 0 0.125 0 0.125 \; wavetable3 sinesum 131 0 0.3 0 0.2
 0 0.1 0 0.05 \; wavetable4 sinesum 131 0.01 0.02 0.04 0.08 0.16 0.32
 ;
@@ -199,6 +199,7 @@
 #X msg 1078 704 start;
 #X msg 1093 733 stop;
 #X msg 1065 676 open 4.touch.wav;
+#X obj 1010 331 loadbang;
 #X connect 0 0 6 0;
 #X connect 5 0 7 0;
 #X connect 8 0 18 0;
@@ -313,3 +314,4 @@
 #X connect 102 0 101 0;
 #X connect 103 0 101 0;
 #X connect 104 0 101 0;
+#X connect 105 0 12 0;

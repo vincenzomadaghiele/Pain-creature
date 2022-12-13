@@ -1,5 +1,5 @@
 #N canvas 1 0 879 872 12;
-#X obj 571 234 piezo-interaction-bela;
+#X obj 569 235 piezo-interaction-bela;
 #X obj 571 207 adc~;
 #X obj 563 364 delwrite~ b1 5000;
 #X obj 113 603 vd~ b1;
@@ -64,7 +64,7 @@
 #X obj 265 736 *~;
 #X obj 301 737 hsl 128 15 0 2 0 0 empty empty empty -2 -8 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 265 760 dac~;
+#X obj 265 800 dac~;
 #X obj 190 109 r window;
 #X obj 266 172 r transp;
 #X obj 458 86 loadbang;
@@ -75,7 +75,9 @@
 #X msg 608 561 start;
 #X msg 623 590 stop;
 #X msg 595 533 open 1.heavy.wav;
+#X obj 265 766 limiter;
 #X connect 0 0 46 0;
+#X connect 0 1 59 1;
 #X connect 1 0 0 0;
 #X connect 3 0 11 0;
 #X connect 4 0 5 0;
@@ -137,9 +139,8 @@
 #X connect 57 0 58 0;
 #X connect 57 1 56 1;
 #X connect 58 0 56 0;
-#X connect 59 0 61 0;
-#X connect 59 0 61 1;
 #X connect 59 0 68 0;
+#X connect 59 0 72 0;
 #X connect 60 0 59 1;
 #X connect 62 0 33 0;
 #X connect 63 0 35 0;
@@ -152,3 +153,5 @@
 #X connect 69 0 68 0;
 #X connect 70 0 68 0;
 #X connect 71 0 68 0;
+#X connect 72 0 61 0;
+#X connect 72 0 61 1;
