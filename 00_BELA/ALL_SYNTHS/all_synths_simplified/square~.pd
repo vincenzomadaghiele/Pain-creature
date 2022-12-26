@@ -3,7 +3,7 @@
 #X obj 56 139 outlet~;
 #X obj 56 88 *~ 2051;
 #X obj 56 112 tabread4~ square;
-#X obj 56 39 inlet;
+#X obj 56 39 inlet~;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;

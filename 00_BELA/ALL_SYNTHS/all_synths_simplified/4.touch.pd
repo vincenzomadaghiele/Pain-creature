@@ -1,4 +1,4 @@
-#N canvas 63 63 1002 769 12;
+#N canvas 63 63 649 769 12;
 #X obj 152 185 *~;
 #X obj 152 208 lop~ 1;
 #X obj 152 234 sqrt~;
