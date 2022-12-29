@@ -14,24 +14,24 @@
 #X text 781 98 Waves;
 #X obj 830 202 3.waves;
 #X obj 126 211 6.bones;
-#X text 128 432 LFO, f 4;
-#X obj 95 481 +~ 1;
-#X obj 95 507 *~ 0.5;
-#X obj 95 457 osc~ 0.01;
-#X obj 95 531 s~ LFO;
-#X obj 224 535 lop~ 0.5;
-#X obj 224 457 noise~;
-#X obj 224 484 lop~ 0.5;
-#X obj 224 509 lop~ 0.5;
-#X obj 313 538 lop~ 0.5;
-#X obj 313 460 noise~;
-#X obj 313 487 lop~ 0.5;
-#X obj 313 512 lop~ 0.5;
-#X text 260 423 NOISE OSCs;
-#X obj 224 559 s~ lopn1;
-#X obj 313 562 s~ lopn2;
-#X obj 210 583 s~ noise1;
-#X obj 296 587 s~ noise2;
+#X text 128 412 LFO, f 4;
+#X obj 95 461 +~ 1;
+#X obj 95 487 *~ 0.5;
+#X obj 95 437 osc~ 0.01;
+#X obj 95 511 s~ LFO;
+#X obj 224 515 lop~ 0.5;
+#X obj 224 437 noise~;
+#X obj 224 464 lop~ 0.5;
+#X obj 224 489 lop~ 0.5;
+#X obj 313 518 lop~ 0.5;
+#X obj 313 440 noise~;
+#X obj 313 467 lop~ 0.5;
+#X obj 313 492 lop~ 0.5;
+#X text 259 410 NOISE OSCs;
+#X obj 224 539 s~ lopn1;
+#X obj 313 542 s~ lopn2;
+#X obj 210 563 s~ noise1;
+#X obj 296 567 s~ noise2;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array triangle 2051 float 3;
 #A 0 -0.0020038 0 0.0020038 0.00400767 0.00601172 0.00801602 0.0100206
@@ -314,9 +314,9 @@
 -0.0160408 -0.0140347 -0.0120292 -0.0100241 -0.00801948 -0.00601519
 -0.00401114 -0.00200726 -3.46629e-06 0.00200033;
 #X coords 0 1 2051 -1 200 140 1 0 0;
-#X restore 423 447 graph;
-#X obj 424 612 loadbang;
-#X msg 424 657 \; triangle sinesum 2051 1 0 -0.111 0 0.04 -0.020408
+#X restore 427 445 graph;
+#X obj 428 610 loadbang;
+#X msg 428 655 \; triangle sinesum 2051 1 0 -0.111 0 0.04 -0.020408
 0 0.0123 0 -0.00826 0 \; \; triangle normalize 1, f 38;
 #X obj 1005 193 4.touch;
 #N canvas 0 22 450 278 (subpatch) 0;
@@ -597,8 +597,8 @@
 -0.138487 -0.115542 -0.0925265 -0.0694545 -0.04634 -0.0231971 -4.00628e-05
 0.023117;
 #X coords 0 1 2050 -1 200 140 1;
-#X restore 732 447 graph;
-#X msg 723 655 \; square sinesum 2051 1 0 0.333 0 0.2 0 0.1428 0 0.111
+#X restore 736 445 graph;
+#X msg 727 653 \; square sinesum 2051 1 0 0.333 0 0.2 0 0.1428 0 0.111
 0 0.0909 0 0.0769 \; \; square normalize 1, f 38;
 #X obj 75 126 adc~ 1;
 #X obj 253 125 adc~ 2;
@@ -607,28 +607,29 @@
 #X obj 779 123 adc~ 1;
 #X obj 963 121 adc~ 2;
 #X obj 531 332 dac~ 1 2;
-#X obj 206 656 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 206 653 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X obj 206 676 metro 100;
-#X obj 206 701 snapshot~;
-#X obj 104 748 vcf~, f 8;
-#X obj 206 749 + 1;
-#X obj 206 725 * 2;
-#X obj 130 719 +~ 100;
-#X obj 130 695 *~ 100;
-#X obj 229 651 loadbang;
-#X obj 104 638 r~ noise1;
-#X obj 104 796 s~ vcf-noise;
-#X obj 130 668 r~ LFO;
-#X obj 104 772 *~ 0.1;
+#X obj 206 673 metro 100;
+#X obj 206 698 snapshot~;
+#X obj 104 745 vcf~, f 8;
+#X obj 206 746 + 1;
+#X obj 206 722 * 2;
+#X obj 130 716 +~ 100;
+#X obj 130 692 *~ 100;
+#X obj 229 648 loadbang;
+#X obj 104 635 r~ noise1;
+#X obj 104 793 s~ vcf-noise;
+#X obj 130 665 r~ LFO;
+#X obj 104 769 *~ 0.1;
 #X obj 652 203 5.flesh;
 #X obj 280 209 2.tectonic-plates;
 #X obj 476 207 1.heavy;
 #X obj 514 31 loadbang;
 #X msg 901 123 0.5;
 #X msg 854 124 40;
-#X msg 550 122 0.5;
-#X msg 503 123 40;
+#X msg 553 122 0.5;
+#X msg 506 123 40;
+#X text 101 609 LFO-MUDLATED FILTERED NOISE;
 #X connect 0 0 14 0;
 #X connect 0 1 14 1;
 #X connect 1 1 60 0;
