@@ -9,11 +9,11 @@
 #X text 433 96 Heavy;
 #X text 602 100 Flesh;
 #X obj 779 153 piezo-interaction-bela;
-#X obj 963 150 piezo-interaction-bela;
-#X text 966 95 Touch;
+#X obj 953 154 piezo-interaction-bela;
+#X text 956 99 Touch;
 #X text 781 98 Waves;
-#X obj 830 202 3.waves;
-#X obj 126 211 6.bones;
+#X obj 795 207 3.waves;
+#X obj 158 211 6.bones;
 #X text 128 412 LFO, f 4;
 #X obj 95 461 +~ 1;
 #X obj 95 487 *~ 0.5;
@@ -318,7 +318,7 @@
 #X obj 428 610 loadbang;
 #X msg 428 655 \; triangle sinesum 2051 1 0 -0.111 0 0.04 -0.020408
 0 0.0123 0 -0.00826 0 \; \; triangle normalize 1, f 38;
-#X obj 1005 193 4.touch;
+#X obj 953 206 4.touch;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array square 2051 float 5;
 #A 0 -0.0231571 0 0.0231571 0.0462999 0.0694145 0.0924867 0.115502
@@ -605,7 +605,7 @@
 #X obj 431 122 adc~ 1;
 #X obj 602 125 adc~ 2;
 #X obj 779 123 adc~ 1;
-#X obj 963 121 adc~ 2;
+#X obj 953 125 adc~ 2;
 #X obj 531 332 dac~ 1 2;
 #X obj 206 653 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
@@ -621,15 +621,27 @@
 #X obj 104 793 s~ vcf-noise;
 #X obj 130 665 r~ LFO;
 #X obj 104 769 *~ 0.1;
-#X obj 652 203 5.flesh;
-#X obj 280 209 2.tectonic-plates;
-#X obj 476 207 1.heavy;
+#X obj 627 208 5.flesh;
+#X obj 312 210 2.tectonic-plates;
+#X obj 472 208 1.heavy;
 #X obj 514 31 loadbang;
 #X msg 901 123 0.5;
 #X msg 854 124 40;
 #X msg 553 122 0.5;
 #X msg 506 123 40;
 #X text 101 609 LFO-MUDLATED FILTERED NOISE;
+#X obj 312 235 *~ 1;
+#X text 350 235 mixing volume;
+#X obj 158 237 *~ 1;
+#X text 196 237 mixing volume;
+#X obj 472 234 *~ 1;
+#X text 510 234 mixing volume;
+#X obj 627 233 *~ 1;
+#X text 665 233 mixing volume;
+#X obj 795 235 *~ 1;
+#X text 833 235 mixing volume;
+#X obj 953 235 *~ 1;
+#X text 991 235 mixing volume;
 #X connect 0 0 14 0;
 #X connect 0 1 14 1;
 #X connect 1 1 60 0;
@@ -641,8 +653,8 @@
 #X connect 9 1 13 0;
 #X connect 10 0 36 0;
 #X connect 10 1 36 1;
-#X connect 13 0 2 0;
-#X connect 14 0 2 0;
+#X connect 13 0 76 0;
+#X connect 14 0 70 0;
 #X connect 16 0 17 0;
 #X connect 17 0 19 0;
 #X connect 18 0 16 0;
@@ -658,7 +670,7 @@
 #X connect 27 0 24 0;
 #X connect 34 0 35 0;
 #X connect 34 0 38 0;
-#X connect 36 0 2 0;
+#X connect 36 0 78 0;
 #X connect 39 0 0 0;
 #X connect 40 0 1 0;
 #X connect 41 0 5 0;
@@ -678,9 +690,9 @@
 #X connect 57 0 53 0;
 #X connect 57 0 48 0;
 #X connect 58 0 56 0;
-#X connect 59 0 2 0;
-#X connect 60 0 2 0;
-#X connect 61 0 2 0;
+#X connect 59 0 74 0;
+#X connect 60 0 68 0;
+#X connect 61 0 72 0;
 #X connect 62 0 64 0;
 #X connect 62 0 63 0;
 #X connect 62 0 66 0;
@@ -689,3 +701,9 @@
 #X connect 64 0 9 1;
 #X connect 65 0 5 2;
 #X connect 66 0 5 1;
+#X connect 68 0 2 0;
+#X connect 70 0 2 0;
+#X connect 72 0 2 0;
+#X connect 74 0 2 0;
+#X connect 76 0 2 0;
+#X connect 78 0 2 0;
