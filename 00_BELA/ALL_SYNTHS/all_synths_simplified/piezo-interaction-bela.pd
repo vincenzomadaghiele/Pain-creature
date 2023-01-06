@@ -4,7 +4,7 @@
 #X obj 282 353 sqrt~;
 #X obj 282 379 outlet~;
 #X text 251 400 envelope follower;
-#X text 116 301 direct sound;
+#X text 114 315 direct sound;
 #X text 115 445 out signals are roughly [0 - 1];
 #X obj 88 68 inlet~;
 #X obj 113 104 *~;
@@ -17,7 +17,7 @@
 #X obj 245 169 exp~;
 #X obj 186 216 +~;
 #X obj 167 242 /~;
-#X obj 148 278 outlet~;
+#X obj 146 292 outlet~;
 #X obj 103 169 clip~ -1e+37 1e+37;
 #X msg 339 152 1;
 #X msg 532 150 0;
