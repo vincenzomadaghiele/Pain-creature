@@ -9,4 +9,4 @@ Pain Creature is a textile-sonic artefact for somaesthetic exploration of chroni
 The artifact is composed of a central part which can be worn on the back, to which five different textile arms are connected. Each arm materializes a different category of chronic pain experience that has been selected from the author's documentation. The shape, material, weaving technique and sonic interaction design of each arm are a representation of the corresponding somaesthetic experience. 
 
 #### Acknowledgments
-This work is the third project of Arife Dila Demir's PhD on interactive textiles. 
+This work is the third project of Arife Dila Demir's PhD on interactive textiles.
