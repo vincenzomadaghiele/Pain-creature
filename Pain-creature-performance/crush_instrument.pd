@@ -8,9 +8,9 @@
 #X obj 184 517 r deltime;
 #X obj 233 544 r delamt;
 #X obj 281 514 r revamt;
-#X obj 490 340 notein;
+#X obj 494 328 notein;
 #X floatatom 469 387 5 0 0 0 - - - 0;
-#X floatatom 541 364 5 0 0 0 - - - 0;
+#X floatatom 541 365 5 0 0 0 - - - 0;
 #X obj 469 411 +;
 #X obj 541 413 del 1;
 #X obj 501 534 clone synth 10;
@@ -98,7 +98,7 @@
 #X obj 379 515 r mastervol;
 #X obj 565 41 stochastic-metro;
 #X msg 430 690 open boops.wav;
-#X msg 382 437 25;
+#X msg 403 414 25;
 #X msg 506 413 64;
 #X connect 0 0 1 0;
 #X connect 0 0 2 0;

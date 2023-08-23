@@ -107,6 +107,7 @@
 #X obj 559 672 ctlin 62;
 #X obj 559 696 / 127;
 #X obj 581 46 metro 4300;
+#X obj 676 44 s kick;
 #X connect 0 0 107 0;
 #X connect 1 0 3 0;
 #X connect 1 0 3 1;
@@ -136,6 +137,7 @@
 #X connect 18 1 15 0;
 #X connect 18 2 10 0;
 #X connect 19 0 20 0;
+#X connect 19 0 108 0;
 #X connect 20 0 7 0;
 #X connect 20 1 17 0;
 #X connect 20 2 32 0;
