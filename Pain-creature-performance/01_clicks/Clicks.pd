@@ -87,8 +87,8 @@
 #X obj 967 527 delwrite~ \$0-del-L 2000;
 #X obj 1010 552 delwrite~ \$0-del-R 2000;
 #X obj 1020 445 delread~ \$0-del-L 160;
-#X obj 949 632 *~;
-#X obj 1005 633 *~;
+#X obj 576 747 *~;
+#X obj 610 747 *~;
 #X floatatom 1067 340 5 0 0 0 - - - 0;
 #X obj 708 328 / 2;
 #X floatatom 708 352 5 0 0 0 - - - 0;
