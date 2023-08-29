@@ -1,27 +1,32 @@
-#N canvas 0 0 1440 872 12;
-#X obj 581 22 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#N canvas 0 0 1280 778 12;
+#X obj 581 22 tgl 19 0 empty empty empty 0 -10 0 12 -262144 -1 -1 0
+1;
 #X obj 541 746 *~;
-#X obj 562 721 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 562 721 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 -262144
+-1 -1 0 1;
 #X obj 541 794 dac~;
 #X obj 447 210 clone click~ 50;
 #X msg 447 185 next \$1;
 #X msg 447 160 2;
-#X obj 447 134 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 447 134 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
+-1 -1;
 #X obj 605 185 del 100;
 #X obj 605 137 random 1000;
 #X obj 692 137 f;
-#X floatatom 692 161 5 0 0 0 - - - 0;
+#X floatatom 692 161 5 0 0 0 - - -;
 #X obj 605 312 spigot;
 #X obj 644 263 f;
 #X obj 696 264 + 1;
-#X obj 644 237 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
-#X floatatom 644 287 5 0 0 0 - - - 0;
+#X obj 644 237 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
+-1 -1;
+#X floatatom 644 287 5 0 0 0 - - -;
 #X msg 670 237 0;
 #X obj 605 209 t b b b;
-#X obj 581 70 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 581 70 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
+-1 -1;
 #X obj 581 95 t b b b;
 #X obj 722 138 * 1.1;
-#X floatatom 771 273 5 0 50 2 num_clicks - - 0;
+#X floatatom 771 273 5 0 50 2 num_clicks - -;
 #X obj 771 165 / 127;
 #X obj 771 213 int;
 #X obj 771 237 + 1;
@@ -29,23 +34,25 @@
 #X obj 665 326 /;
 #X obj 665 350 * -1;
 #X obj 665 374 + 1;
-#X floatatom 665 398 5 0 0 0 - - - 0;
+#X floatatom 665 398 5 0 0 0 - - -;
 #X obj 771 139 ctlin 16;
 #X msg 692 113 30;
 #X obj 949 474 +~;
 #X obj 967 446 *~ 0.7;
-#X floatatom 999 387 5 0 0 0 - - - 0;
+#X floatatom 999 387 5 0 0 0 - - -;
 #X obj 999 315 / 127;
 #X obj 999 339 * 300;
 #X obj 999 363 + 70;
 #X obj 999 291 ctlin 17;
 #X obj 66 184 noise~;
-#X obj 66 237 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 66 237 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
+-1 -1;
 #X obj 66 261 random 100;
 #X obj 66 290 / 50;
 #X obj 105 420 *~;
-#X obj 141 421 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
-#X floatatom 152 316 5 0 0 0 - - - 0;
+#X obj 141 421 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 -262144
+-1 -1 0 1;
+#X floatatom 152 316 5 0 0 0 - - -;
 #X obj 152 339 sig~;
 #X obj 66 373 vcf~ 5;
 #X obj 66 213 threshold~ 0.9999;
@@ -55,7 +62,7 @@
 #X obj 1067 316 / 127;
 #X obj 118 41 ctlin 20;
 #X obj 118 65 / 127;
-#X floatatom 118 162 8 0 0 0 - - - 0;
+#X floatatom 118 162 8 0 0 0 - - -;
 #X obj 152 243 ctlin 21;
 #X obj 118 138 -;
 #X msg 118 114 1;
@@ -63,7 +70,8 @@
 #X msg 118 184 set \$1 10 0.1 10;
 #X text 732 112 generate many randomly spaced clicks;
 #X obj 949 608 *~;
-#X obj 1040 634 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 1040 634 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 -262144
+-1 -1 0 1;
 #X obj 1037 587 ctlin 19;
 #X obj 1037 611 / 127;
 #X obj 138 373 ctlin 23;
@@ -71,11 +79,12 @@
 #X obj 66 315 clack~;
 #X obj 771 189 * 50;
 #X obj 696 288 % 50;
-#X obj 742 520 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
-#X floatatom 739 544 5 0 0 0 - - - 0;
+#X obj 742 520 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 -262144
+-1 -1 0 1;
+#X floatatom 739 544 5 0 0 0 - - -;
 #X obj 739 567 * -1;
 #X obj 739 591 + 1;
-#X floatatom 739 615 5 0 0 0 - - - 0;
+#X floatatom 739 615 5 0 0 0 - - -;
 #X obj 447 259 *~;
 #X obj 487 259 *~;
 #X obj 447 290 *~;
@@ -89,9 +98,9 @@
 #X obj 1020 445 delread~ \$0-del-L 160;
 #X obj 576 747 *~;
 #X obj 610 747 *~;
-#X floatatom 1067 340 5 0 0 0 - - - 0;
+#X floatatom 1067 340 5 0 0 0 - - -;
 #X obj 708 328 / 2;
-#X floatatom 708 352 5 0 0 0 - - - 0;
+#X floatatom 708 352 5 0 0 0 - - -;
 #X obj 754 399 random 2;
 #X obj 742 448 + 0.5;
 #X obj 708 399 * -1;
@@ -99,7 +108,8 @@
 #X obj 724 473 f;
 #X obj 708 375 t f f b;
 #X obj 754 423 sel 1;
-#X obj 786 447 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 786 447 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
+-1 -1;
 #X obj 786 472 f;
 #X text 743 498 random panning;
 #X text 997 265 stereo delay;
@@ -107,7 +117,6 @@
 #X obj 559 672 ctlin 62;
 #X obj 559 696 / 127;
 #X obj 581 46 metro 4300;
-#X obj 676 44 s kick;
 #X connect 0 0 107 0;
 #X connect 1 0 3 0;
 #X connect 1 0 3 1;
@@ -137,7 +146,6 @@
 #X connect 18 1 15 0;
 #X connect 18 2 10 0;
 #X connect 19 0 20 0;
-#X connect 19 0 108 0;
 #X connect 20 0 7 0;
 #X connect 20 1 17 0;
 #X connect 20 2 32 0;
