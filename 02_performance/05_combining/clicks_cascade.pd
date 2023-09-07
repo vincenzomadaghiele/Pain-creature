@@ -1,29 +1,25 @@
 #N canvas 0 0 1280 778 8;
-#X obj 240 9 tgl 19 0 empty empty empty 0 -10 0 12 -262144 -1 -1 0
-1;
-#X obj 642 709 dac~;
+#X obj 240 9 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 646 731 dac~;
 #X obj 106 197 clone click~ 50;
 #X msg 106 172 next \$1;
 #X msg 106 147 2;
-#X obj 106 121 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
--1 -1;
+#X obj 106 121 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 264 172 del 100;
 #X obj 264 124 random 1000;
 #X obj 351 124 f;
-#X floatatom 351 148 5 0 0 0 - - -;
+#X floatatom 351 148 5 0 0 0 - - - 0;
 #X obj 264 299 spigot;
 #X obj 303 250 f;
 #X obj 355 251 + 1;
-#X obj 303 224 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
--1 -1;
-#X floatatom 303 274 5 0 0 0 - - -;
+#X obj 303 224 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X floatatom 303 274 5 0 0 0 - - - 0;
 #X msg 329 224 0;
 #X obj 264 196 t b b b;
-#X obj 240 57 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
--1 -1;
+#X obj 240 57 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 240 82 t b b b;
 #X obj 381 125 * 1.1;
-#X floatatom 430 260 5 0 50 2 num_clicks - -;
+#X floatatom 430 260 5 0 50 2 num_clicks - - 0;
 #X obj 430 152 / 127;
 #X obj 430 200 int;
 #X obj 430 224 + 1;
@@ -31,30 +27,28 @@
 #X obj 324 313 /;
 #X obj 306 403 * -1;
 #X obj 306 427 + 1;
-#X floatatom 306 451 5 0 0 0 - - -;
+#X floatatom 306 451 5 0 0 0 - - - 0;
 #X obj 430 126 ctlin 16;
 #X msg 351 100 30;
 #X obj 621 507 +~;
 #X obj 639 479 *~ 0.7;
-#X floatatom 671 420 5 0 0 0 - - -;
+#X floatatom 671 420 5 0 0 0 - - - 0;
 #X obj 920 167 / 127;
 #X obj 671 372 * 300;
 #X obj 671 396 + 70;
 #X obj 920 143 ctlin 17;
 #X text 391 99 generate many randomly spaced clicks;
 #X obj 621 641 *~;
-#X obj 712 667 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 -262144
--1 -1 16100 1;
+#X obj 712 667 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 709 620 ctlin 19;
 #X obj 709 644 / 127;
 #X obj 430 176 * 50;
 #X obj 355 275 % 50;
-#X obj 401 507 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 -262144
--1 -1 268 1;
-#X floatatom 398 531 5 0 0 0 - - -;
+#X obj 401 507 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X floatatom 398 531 5 0 0 0 - - - 0;
 #X obj 398 554 * -1;
 #X obj 398 578 + 1;
-#X floatatom 398 602 5 0 0 0 - - -;
+#X floatatom 398 602 5 0 0 0 - - - 0;
 #X obj 319 640 *~;
 #X obj 359 640 *~;
 #X obj 315 702 *~;
@@ -66,9 +60,9 @@
 #X obj 639 560 delwrite~ \$0-del-L 2000;
 #X obj 682 585 delwrite~ \$0-del-R 2000;
 #X obj 692 478 delread~ \$0-del-L 160;
-#X floatatom 714 391 5 0 0 0 - - -;
+#X floatatom 714 391 5 0 0 0 - - - 0;
 #X obj 396 323 / 2;
-#X floatatom 396 347 5 0 0 0 - - -;
+#X floatatom 396 347 5 0 0 0 - - - 0;
 #X obj 442 394 random 2;
 #X obj 380 444 + 0.5;
 #X obj 396 394 * -1;
@@ -76,8 +70,7 @@
 #X obj 381 466 f;
 #X obj 396 370 t f f b;
 #X obj 442 418 sel 1;
-#X obj 464 437 bng 19 250 50 0 empty empty empty 0 -10 0 12 -262144
--1 -1;
+#X obj 464 437 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 464 462 f;
 #X text 402 485 random panning;
 #X text 689 324 stereo delay;
@@ -87,29 +80,27 @@
 #X text 263 380 volume decreases;
 #X obj 989 105 random 1000;
 #X obj 989 124 / 1100;
-#X floatatom 989 143 5 0 0 0 - - -;
+#X floatatom 989 143 5 0 0 0 - - - 0;
 #X obj 918 105 random 1000;
 #X obj 918 123 / 1100;
 #X obj 835 140 random 5;
-#X obj 838 195 hsl 64 15 1 6 0 0 empty empty num_clicks -2 -8 0 10
--204800 -1 -1 5040 1;
+#X obj 838 195 hsl 64 15 1 6 0 0 empty empty num_clicks -2 -8 0 10 #c4fcfc #000000 #000000 0 1;
 #X obj 835 215 s num-clicks;
 #X obj 482 227 r num-clicks;
 #X obj 306 33 r click;
-#X obj 923 198 hsl 64 15 0 1 0 0 empty empty del_time -2 -8 0 10 -232576
--1 -1 2113 1;
+#X obj 923 198 hsl 64 15 0 1 0 0 empty empty del_time -2 -8 0 10 #e0c4fc #000000 #000000 0 1;
 #X obj 920 218 s click-del-time;
 #X obj 671 351 r click-del-time;
-#X obj 1016 199 hsl 64 15 0 1 0 0 empty empty del-feeback -2 -8 0 10
--203904 -1 -1 3975 1;
+#X obj 1016 199 hsl 64 15 0 1 0 0 empty empty del-feeback -2 -8 0 10 #c4c4fc #000000 #000000 0 1;
 #X obj 1013 219 s click-del-feedback;
 #X obj 714 373 r click-del-feedback;
 #X obj 1046 145 ctlin 18;
 #X obj 1046 168 / 127;
 #X text 937 299 change panning in 4.1 with vbap;
-#X text 864 315 select random center in the 360 degrees and spread
-around it;
-#X floatatom 998 357 5 0 1 2 pan_center - -;
+#X text 864 315 select random center in the 360 degrees and spread around it;
+#X floatatom 998 357 5 0 1 2 pan_center - - 0;
+#X obj 677 700 limiter;
+#X obj 621 700 limiter;
 #X connect 0 0 75 0;
 #X connect 2 0 50 0;
 #X connect 2 0 51 0;
@@ -161,7 +152,7 @@ around it;
 #X connect 35 0 36 0;
 #X connect 36 0 33 0;
 #X connect 37 0 34 0;
-#X connect 39 0 1 0;
+#X connect 39 0 101 0;
 #X connect 40 0 39 1;
 #X connect 40 0 54 1;
 #X connect 41 0 42 0;
@@ -178,7 +169,7 @@ around it;
 #X connect 51 0 53 0;
 #X connect 52 0 31 0;
 #X connect 53 0 55 0;
-#X connect 54 0 1 1;
+#X connect 54 0 100 0;
 #X connect 55 0 59 0;
 #X connect 55 0 54 0;
 #X connect 56 0 55 1;
@@ -201,9 +192,6 @@ around it;
 #X connect 71 0 72 0;
 #X connect 72 0 45 0;
 #X connect 75 0 17 0;
-#X connect 76 0 79 0;
-#X connect 76 0 82 0;
-#X connect 76 0 84 0;
 #X connect 77 0 85 0;
 #X connect 79 0 80 0;
 #X connect 80 0 81 0;
@@ -222,3 +210,5 @@ around it;
 #X connect 96 0 92 0;
 #X connect 99 0 67 1;
 #X connect 99 0 65 1;
+#X connect 100 0 1 1;
+#X connect 101 0 1 0;

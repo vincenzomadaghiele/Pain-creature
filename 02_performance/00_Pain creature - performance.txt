@@ -1,0 +1,18 @@
+Pain creature - performance
+
+intro: 
+	- clicks 
+	- clicks + knuckles
+	- clicks cascade
+drums part:
+	- start with randomized kick drums
+	- make bloody, fleshy, unpredictable rhythm
+	- implement crescendo adding noises
+	- add an atmospheric synth to the drums (noisy)
+	- confusion, melting digital sounds, sudden stop
+solo: 
+part 2:
+	- implement distortion, glitch, feedback, overdrive for part two of the performance
+ending:
+	- Dila is standing in the center, feedback from Pain Creature surround her and distorts 
+	- sudden stop
