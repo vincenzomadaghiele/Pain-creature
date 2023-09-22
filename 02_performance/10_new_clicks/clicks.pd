@@ -232,6 +232,7 @@
 #X obj 427 69 r play;
 #X obj 427 95 random 5;
 #X floatatom 427 143 5 0 0 0 - - - 0;
+#X obj 146 218 loadbang;
 #X connect 0 0 112 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -352,3 +353,4 @@
 #X connect 119 0 120 0;
 #X connect 120 0 117 0;
 #X connect 121 0 112 2;
+#X connect 122 0 29 0;

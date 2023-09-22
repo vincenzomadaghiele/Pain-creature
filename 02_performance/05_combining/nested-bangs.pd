@@ -746,8 +746,8 @@
 #X obj 1009 758 del 156.25;
 #X obj 1171 755 del 156.25;
 #X obj 1341 752 del 156.25;
-#X obj 675 38 ctlin 58;
-#X obj 675 57 / 127;
+#X obj 925 51 ctlin 58;
+#X obj 925 70 / 127;
 #X text 1112 105 optimize for 4.1;
 #X text 1107 130 send probabilities?;
 #X text 1083 149 send layer of subdivision?;
@@ -789,6 +789,10 @@
 #X obj 77 377 s p-3;
 #X obj 89 524 s p-4;
 #X obj 81 717 s p-5;
+#X obj 925 90 + 1;
+#X obj 925 110 log 2;
+#X obj 924 131 + 1;
+#X obj 924 151 log 2;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 5 0;
@@ -1009,4 +1013,8 @@
 #X connect 125 0 110 0;
 #X connect 126 0 118 0;
 #X connect 127 0 128 0;
-#X connect 128 0 8 0;
+#X connect 128 0 170 0;
+#X connect 170 0 171 0;
+#X connect 171 0 172 0;
+#X connect 172 0 173 0;
+#X connect 173 0 8 0;

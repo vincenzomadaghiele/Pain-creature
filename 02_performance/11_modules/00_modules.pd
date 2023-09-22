@@ -1,0 +1,11 @@
+#N canvas 0 0 1440 872 12;
+#X obj 437 103 fragmented-glitch-click~;
+#X obj 254 202 knuckles-gen~;
+#X obj 811 105 pixel-burst-click~;
+#X obj 626 104 smooth-click~;
+#X obj 1001 103 random-noise-click~;
+#X obj 69 152 clicks-cascade~;
+#X obj 622 601 out~;
+#X obj 241 605 stereo-delay~;
+#X text 453 640 VST REVERB;
+#X text 620 36 SEQUENCER;

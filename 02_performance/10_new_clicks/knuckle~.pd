@@ -11,9 +11,9 @@
 #X obj 243 152 *~;
 #X obj 85 225 hip~ 5;
 #X floatatom 85 80 5 0 0 0 - - - 0;
-#X obj 85 54 inlet;
-#X obj 204 55 inlet;
+#X obj 85 25 inlet;
 #X obj 85 249 outlet~;
+#X obj 85 52 list split 1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -29,7 +29,8 @@
 #X connect 7 0 3 1;
 #X connect 8 0 3 1;
 #X connect 9 0 3 1;
-#X connect 10 0 14 0;
+#X connect 10 0 13 0;
 #X connect 11 0 4 0;
-#X connect 12 0 11 0;
-#X connect 13 0 5 0;
+#X connect 12 0 14 0;
+#X connect 14 0 11 0;
+#X connect 14 1 5 0;
