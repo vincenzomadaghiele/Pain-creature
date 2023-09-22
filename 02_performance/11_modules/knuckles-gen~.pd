@@ -1,10 +1,10 @@
-#N canvas 0 0 781 791 12;
+#N canvas 0 0 744 659 12;
 #X obj 352 199 noise~;
 #X obj 352 252 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 352 276 random 100;
 #X floatatom 526 344 5 0 0 0 - - - 0;
 #X obj 526 367 sig~;
-#X obj 428 450 vcf~ 5;
+#X obj 424 454 vcf~ 5;
 #X obj 352 228 threshold~ 0.9999;
 #X obj 526 319 * 1000;
 #X floatatom 404 177 8 0 0 0 - - - 0;
@@ -25,9 +25,13 @@
 #X obj 150 249 hsl 64 19 0.01 1 0 0 empty empty saturation -2 -10 0 12 #feffc6 #000000 #000000 0 1;
 #X obj 151 204 hsl 64 19 0.01 1 0 0 empty empty vcf\ freq -2 -10 0 12 #c6ffc7 #000000 #000000 0 1;
 #X obj 150 289 hsl 64 19 0 1 0 0 empty empty vol -2 -10 0 12 #dfdfdf #000000 #000000 0 1;
-#X obj 409 557 *~;
-#X obj 409 581 outlet~;
-#X obj 434 492 oversat~;
+#X obj 424 525 *~;
+#X obj 424 549 outlet~;
+#X obj 424 486 oversat~;
+#X obj 95 62 inlet;
+#X obj 143 61 inlet;
+#X obj 193 62 inlet;
+#X obj 241 61 inlet;
 #X connect 0 0 6 0;
 #X connect 1 0 2 0;
 #X connect 2 0 20 0;
@@ -58,4 +62,8 @@
 #X connect 25 0 26 1;
 #X connect 26 0 27 0;
 #X connect 28 0 26 0;
+#X connect 29 0 22 0;
+#X connect 30 0 24 0;
+#X connect 31 0 23 0;
+#X connect 32 0 25 0;
 #X coords 0 -1 1 1 170 250 1 100 100;

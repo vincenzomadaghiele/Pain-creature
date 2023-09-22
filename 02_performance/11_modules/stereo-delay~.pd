@@ -13,9 +13,9 @@
 #X obj 338 154 * 300;
 #X obj 338 178 + 70;
 #X obj 165 57 inlet;
-#X obj 128 153 hsl 64 19 0 127 0 0 empty empty del\ time -2 -10 0 12 #e3c6ff #000000 #000000 0 1;
+#X obj 128 153 hsl 64 19 0 1 0 0 empty empty del\ time -2 -10 0 12 #e3c6ff #000000 #000000 0 1;
 #X obj 221 57 inlet;
-#X obj 127 199 hsl 64 19 0 127 0 0 empty empty del\ feedback -2 -10 0 12 #c7c6ff #000000 #000000 0 1;
+#X obj 127 199 hsl 64 19 0 1 0 0 empty empty del\ feedback -2 -10 0 12 #c7c6ff #000000 #000000 0 1;
 #X obj 291 465 outlet~;
 #X obj 353 465 outlet~;
 #X obj 49 57 inlet~;

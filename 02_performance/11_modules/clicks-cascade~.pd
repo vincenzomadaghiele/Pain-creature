@@ -87,6 +87,7 @@
 #X obj 836 759 outlet~;
 #X obj 892 758 outlet~;
 #X obj 321 227 clone click 50;
+#X obj 269 67 inlet;
 #X connect 0 0 87 0;
 #X connect 1 0 0 0;
 #X connect 2 0 4 0;
@@ -184,4 +185,5 @@
 #X connect 84 0 72 0;
 #X connect 87 0 40 0;
 #X connect 87 0 41 0;
+#X connect 88 0 80 0;
 #X coords 0 -1 1 1 170 300 1 100 100;
