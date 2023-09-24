@@ -32,6 +32,7 @@
 #X text 418 784 AMBIENCE;
 #X text 610 781 ANALOG SOUND;
 #X text 92 787 INPUT FROM PAIN CREATURE;
+#X obj 1244 95 stochastic-polymetric-sequencer-mini;
 #X connect 0 0 7 0;
 #X connect 0 0 7 1;
 #X connect 1 0 7 0;
@@ -58,3 +59,10 @@
 #X connect 28 0 13 0;
 #X connect 29 0 6 0;
 #X connect 29 1 6 1;
+#X connect 33 0 0 0;
+#X connect 33 1 0 0;
+#X connect 33 2 3 0;
+#X connect 33 3 4 0;
+#X connect 33 4 2 0;
+#X connect 33 5 2 0;
+#X connect 33 6 4 0;
