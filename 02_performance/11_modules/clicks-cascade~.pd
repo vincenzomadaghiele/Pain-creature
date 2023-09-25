@@ -13,7 +13,7 @@
 #X floatatom 518 304 5 0 0 0 - - - 0;
 #X msg 544 254 0;
 #X obj 479 226 t b b b;
-#X obj 170 129 bng 25 250 50 0 empty empty empty 0 -10 0 12 #ff0400 #000000 #000000;
+#X obj 195 129 bng 25 250 50 0 empty empty empty 0 -10 0 12 #ff8300 #000000 #000000;
 #X obj 455 112 t b b b;
 #X obj 596 155 * 1.1;
 #X floatatom 645 290 5 0 50 2 num_clicks - - 0;
@@ -92,6 +92,9 @@
 #X obj 929 403 r \$0-click-del-feedback;
 #X obj 271 495 s \$0-click-del-feedback;
 #X obj 163 495 s \$0-click-del-time;
+#X obj 145 130 tgl 25 0 empty empty cc-ON 0 -8 0 8 #ff0400 #000000 #000000 0 1;
+#X obj 59 142 spigot;
+#X obj 75 15 r cc-ON;
 #X connect 0 0 81 0;
 #X connect 1 0 0 0;
 #X connect 2 0 4 0;
@@ -180,7 +183,7 @@
 #X connect 73 0 79 0;
 #X connect 74 0 44 1;
 #X connect 74 0 32 1;
-#X connect 75 0 14 0;
+#X connect 75 0 94 0;
 #X connect 76 0 66 0;
 #X connect 77 0 67 0;
 #X connect 78 0 68 0;
@@ -194,4 +197,7 @@
 #X connect 88 0 33 0;
 #X connect 89 0 29 0;
 #X connect 90 0 51 0;
+#X connect 93 0 94 1;
+#X connect 94 0 14 0;
+#X connect 95 0 93 0;
 #X coords 0 -1 1 1 170 300 1 100 100;
