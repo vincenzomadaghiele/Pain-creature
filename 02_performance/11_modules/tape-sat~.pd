@@ -47,8 +47,9 @@
 #X obj 237 186 s \$0-rev-msg;
 #X msg 72 313 param_list;
 #X obj 72 287 r \$0-rev-msg;
-#X obj 128 152 hsl 64 19 0 1 0 0 empty empty GREASE -2 -10 0 12 #ff8300 #000000 #000000 0 1;
+#X obj 128 152 hsl 64 19 0 1 0 0 empty empty ts-GREASE -2 -10 0 12 #ff8300 #000000 #000000 0 1;
 #X obj 222 65 inlet;
+#X obj 224 36 r ts-GREASE;
 #X connect 0 0 5 0;
 #X connect 0 1 6 0;
 #X connect 0 2 7 0;
@@ -61,4 +62,5 @@
 #X connect 11 0 0 0;
 #X connect 12 0 8 0;
 #X connect 13 0 12 0;
+#X connect 14 0 12 0;
 #X coords 0 -1 1 1 120 100 1 100 100;
