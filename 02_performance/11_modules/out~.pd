@@ -12,10 +12,13 @@
 #X obj 343 224 limiter;
 #X obj 75 69 inlet~;
 #X obj 139 69 inlet~;
-#X obj 193 146 vsl 19 160 0 1 0 0 empty empty vol 0 -9 0 12 #dfdfdf #000000 #000000 0 1;
+#X obj 192 146 vsl 19 160 0 1 0 0 empty empty empty 0 -9 0 12 #dfdfdf #000000 #000000 0 1;
 #X obj 198 71 inlet;
 #X text 122 121 L;
 #X text 143 121 R;
+#X text 172 109 master-;
+#X text 188 123 vol;
+#X obj 225 25 r master-vol;
 #X connect 0 0 10 0;
 #X connect 1 0 9 0;
 #X connect 3 0 4 0;
@@ -31,4 +34,5 @@
 #X connect 13 0 0 1;
 #X connect 13 0 1 1;
 #X connect 14 0 13 0;
+#X connect 19 0 13 0;
 #X coords 0 -1 1 1 130 240 1 100 100;
