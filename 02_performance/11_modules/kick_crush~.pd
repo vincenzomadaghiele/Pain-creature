@@ -101,6 +101,7 @@
 #X text 589 602 bit crush out;
 #X text 1099 85 BIT CRUSH;
 #X text 677 66 SAMPLE CRUSH;
+#X obj 212 196 / 2;
 #X connect 0 0 16 1;
 #X connect 2 0 4 1;
 #X connect 4 0 5 0;
@@ -117,7 +118,7 @@
 #X connect 14 0 15 1;
 #X connect 15 0 13 0;
 #X connect 16 0 27 0;
-#X connect 16 0 28 0;
+#X connect 16 0 74 0;
 #X connect 17 0 6 0;
 #X connect 18 0 0 0;
 #X connect 20 0 2 0;
@@ -171,3 +172,4 @@
 #X connect 66 0 67 0;
 #X connect 67 0 68 1;
 #X connect 68 0 69 0;
+#X connect 74 0 28 0;
