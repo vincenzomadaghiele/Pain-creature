@@ -345,6 +345,7 @@
 #X obj 728 824 throw~ BR-bus;
 #X obj 879 824 throw~ BL-bus;
 #X obj 637 62 sequencer;
+#X obj 461 119 del 3;
 #X connect 0 0 41 0;
 #X connect 0 1 42 0;
 #X connect 0 2 43 0;
@@ -392,6 +393,7 @@
 #X connect 26 0 2 0;
 #X connect 27 0 32 0;
 #X connect 28 0 27 0;
+#X connect 28 0 46 0;
 #X connect 29 0 30 0;
 #X connect 30 0 31 0;
 #X connect 33 0 19 0;
@@ -407,3 +409,4 @@
 #X connect 45 4 22 6;
 #X connect 45 4 2 6;
 #X connect 45 4 3 6;
+#X connect 46 0 29 0;
