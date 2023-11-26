@@ -1,5 +1,5 @@
 #N canvas 237 237 568 300 12;
-#X obj 110 123 bng 65 250 50 0 clock-reset empty START 15 33 0 12 #ffc7c6 #000000 #000000;
+#X obj 110 123 bng 65 250 50 0 clock-reset empty START 15 33 0 12 #ffc7c6 #ff0400 #ff0400;
 #X floatatom 185 132 8 0 0 2 minutes mins - 0;
 #X floatatom 185 170 8 0 0 2 seconds secs - 0;
 #X obj 369 65 r clock-reset;

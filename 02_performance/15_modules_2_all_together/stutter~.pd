@@ -1,0 +1,15 @@
+#N canvas 355 275 661 481 12;
+#X obj 234 104 inlet~;
+#X obj 306 103 inlet~;
+#X obj 261 170 stutter;
+#X obj 132 146 tgl 35 0 empty empty STUTTER -5 -10 0 12 #00faff #0400ff #000000 0 1;
+#X obj 239 235 outlet~;
+#X obj 310 235 outlet~;
+#X obj 130 32 r stutter-ON;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 4 0;
+#X connect 2 1 5 0;
+#X connect 3 0 2 2;
+#X connect 6 0 3 0;
+#X coords 0 -1 1 1 100 100 1 100 100;

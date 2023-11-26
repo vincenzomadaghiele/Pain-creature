@@ -1,4 +1,4 @@
-#N canvas 0 0 1440 872 12;
+#N canvas 0 38 1440 872 12;
 #X floatatom 135 111 5 0 0 0 - - - 0;
 #X text 121 138 fDec = 250;
 #X floatatom 231 109 5 0 0 0 - - - 0;
