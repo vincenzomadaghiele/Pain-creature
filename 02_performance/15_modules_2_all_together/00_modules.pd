@@ -12,10 +12,10 @@
 #X obj 609 801 throw~ R-bus;
 #X obj 1197 66 catch~ L-bus;
 #X obj 1292 67 catch~ R-bus;
-#X obj 1232 101 stereo-delay~;
+#X obj 1232 112 stereo-delay~;
 #X obj 525 323 throw~ L-bus;
 #X obj 678 323 throw~ R-bus;
-#N canvas 0 38 1512 916 mapping 1;
+#N canvas 0 38 1512 916 mapping 0;
 #X obj 45 25 ctlin;
 #X floatatom 61 52 5 0 0 0 - - - 0;
 #X obj 56 165 s cc-num-clicks;
